@@ -64,10 +64,96 @@ MySQL >= 8.0.42
 # 商业智能
 powerbi >= 2.148.1226.0
 
-## 分析框架
+# 分析框架
 analysis_dimensions = {
     'operational': '订单趋势、车辆利用率分析',
     'spatial': '热点区域识别、OD矩阵分析',
     'user_behavior': '用户分群、使用模式分析', 
     'business': '收入估算、优化建议'
 }
+```
+
+## 📁 项目结构
+```
+shenzhen-bike-analysis/
+│
+├── data/                           # 数据目录
+│   ├── raw/                       # 原始数据集
+│   ├── processed/                 # 清洗后的数据
+│   └── external/                  # 外部数据源
+│
+├── notebooks/                     # Jupyter笔记本
+│   ├── 01_data_cleaning.ipynb     # 数据清洗
+│   ├── 02_eda_analysis.ipynb      # 探索性数据分析
+│   ├── 03_spatial_analysis.ipynb  # 空间分析
+│   └── 04_business_insights.ipynb # 商业洞察
+│
+├── src/                          # 源代码
+│   ├── __init__.py
+│   ├── data_processor.py         # 数据处理模块
+│   ├── analyzer.py               # 分析函数
+│   ├── visualizer.py             # 可视化工具
+│   └── utils.py                  # 工具函数
+│
+├── sql/                          # 数据库脚本
+│   ├── schema_design.sql         # 数据库设计
+│   ├── analysis_queries.sql      # 分析查询
+│   └── optimization_scripts.sql  # 优化脚本
+│
+├── docs/                         # 文档
+│   ├── api_reference.md          # API参考
+│   └── technical_specs.md        # 技术规范
+│
+├── tests/                        # 测试用例
+│   ├── test_data_processing.py   # 数据处理测试
+│   └── test_analysis.py          # 分析功能测试
+│
+├── reports/                      # 输出文件
+│   ├── dashboards/               # 仪表板
+│   ├── visualizations/           # 可视化图表
+│   └── analysis_reports/         # 分析报告
+│
+├── requirements.txt              # 依赖列表
+├── setup.py                      # 安装配置
+└── README.md                     # 项目说明
+```
+
+## 📈 核心分析结果
+### 运营洞察
+- 高峰时段:
+- 车辆利用率:
+- 效率差距:
+### 用户分群
+### 商业指标
+
+## 💡 商业建议
+### 立即行动（1-4周）
+#### 1. 高峰时段优化
+#### 2. 热点区域管理
+
+### 战略举措（1-6个月）
+#### 1. 会员体系
+#### 2. 预测分析
+
+## 🔧 技术实现
+### 数据处理管道
+### 高级SQL查询
+### 收入估算模型
+
+## 🎯 性能优化
+### 查询优化
+### 内存管理
+
+## 🤝 贡献指南
+**我们欢迎各种贡献**
+
+## 👨‍💻 作者
+**CHENYU JIA**
+- 邮箱:240518031@xs.wbu.edu.cn
+
+## 🙏 致谢
+- 数据由深圳市政府数据开放平台提供
+- 可视化灵感来源于城市出行研究
+- 技术指导来自数据科学社区
+<div align="center">
+如果觉得这个项目有帮助，请给它一个⭐！
