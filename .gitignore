@@ -1,0 +1,19 @@
+# 原始数据（432 MB，超过 GitHub 单文件限制，请按 README 说明自行下载）
+*.csv
+data/
+raw/
+
+# Jupyter 检查点
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
