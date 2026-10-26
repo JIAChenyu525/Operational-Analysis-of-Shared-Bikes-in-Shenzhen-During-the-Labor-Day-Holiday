@@ -1,0 +1,21 @@
+flowchart TD
+    A["原始订单<br/>3,364,413 条"]:::data --> B["质量审计<br/>完整性 · 唯一性 · 时间一致性<br/>空间有效性 · 运动学合理性"]
+    B --> C["清洗五道规则<br/>去重 · 坐标 · 时长 · 距离 · 速度"]
+    C --> D["特征工程<br/>0.01° 网格 · 片区映射 · 派生量"]
+
+    D --> E["时间维度<br/>三日节律 · 降雨扰动"]
+    D --> F["空间维度<br/>网格热力 · 距离时长"]
+
+    F --> G["OD 网络"]
+    G --> H["Louvain 社区发现<br/>14 个社区 · Q = 0.833"]
+    G --> I["KMeans 功能区聚类<br/>4 类时间形态"]
+
+    E --> J["潮汐与供需失衡<br/>净流入 −563 ~ +456 辆/天"]
+    H --> J
+    I --> J
+
+    J --> K["需求预测<br/>HistGradientBoosting<br/>MAE 10.3 辆 · R² 0.907"]
+    K --> L(["运营建议"]):::out
+
+    classDef data fill:#0E6A75,stroke:#0E6A75,color:#ffffff
+    classDef out fill:#D9532B,stroke:#D9532B,color:#ffffff

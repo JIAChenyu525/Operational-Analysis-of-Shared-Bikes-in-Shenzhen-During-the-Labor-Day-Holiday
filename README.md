@@ -132,29 +132,11 @@
 
 <p align="center"><sub>五道清洗规则只剔除物理上不可能或无法用于时空分析的记录，保留 94.8%。</sub></p>
 
-```mermaid
-flowchart TD
-    A["原始订单<br/>3,364,413 条"]:::data --> B["质量审计<br/>完整性 · 唯一性 · 时间一致性<br/>空间有效性 · 运动学合理性"]
-    B --> C["清洗五道规则<br/>去重 · 坐标 · 时长 · 距离 · 速度"]
-    C --> D["特征工程<br/>0.01° 网格 · 片区映射 · 派生量"]
+<p align="center">
+  <img src="assets/figures/00-pipeline.png" alt="分析链路:从原始订单到运营建议" width="64%">
+</p>
 
-    D --> E["时间维度<br/>三日节律 · 降雨扰动"]
-    D --> F["空间维度<br/>网格热力 · 距离时长"]
-
-    F --> G["OD 网络"]
-    G --> H["Louvain 社区发现<br/>14 个社区 · Q = 0.833"]
-    G --> I["KMeans 功能区聚类<br/>4 类时间形态"]
-
-    H --> J["潮汐与供需失衡<br/>净流入 −563 ~ +456 辆/天"]
-    I --> J
-
-    E --> K["需求预测<br/>HistGradientBoosting<br/>MAE 10.3 辆 · R² 0.907"]
-    J --> K
-    K --> L(["运营建议"]):::out
-
-    classDef data fill:#0E6A75,stroke:#0E6A75,color:#ffffff
-    classDef out fill:#D9532B,stroke:#D9532B,color:#ffffff
-```
+<p align="center"><sub>链路图由 Mermaid 渲染后导出（源文件 <code>assets/src/pipeline.mmd</code>），不依赖 GitHub 的在线 Mermaid 服务。</sub></p>
 
 清洗后保留 **3,189,049** 条有效骑行，唯一用户 **1,206,439**，累计里程 **3,908,281 km**。
 
