@@ -133,7 +133,7 @@
 <p align="center"><sub>五道清洗规则只剔除物理上不可能或无法用于时空分析的记录，保留 94.8%。</sub></p>
 
 <p align="center">
-  <img src="assets/figures/00-pipeline.png" alt="分析链路:从原始订单到运营建议" width="64%">
+  <img src="assets/figures/00-pipeline.png" alt="分析链路:从原始订单到运营建议" width="72%">
 </p>
 
 <p align="center"><sub>链路图由 Mermaid 渲染后导出（源文件 <code>assets/src/pipeline.mmd</code>），不依赖 GitHub 的在线 Mermaid 服务。</sub></p>
