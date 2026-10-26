@@ -136,7 +136,7 @@
   <img src="assets/figures/00-pipeline.png" alt="分析链路:从原始订单到运营建议" width="72%">
 </p>
 
-<p align="center"><sub>链路图由 Mermaid 渲染后导出（源文件 <code>assets/src/pipeline.mmd</code>），不依赖 GitHub 的在线 Mermaid 服务。</sub></p>
+<p align="center"><sub>链路图由 Mermaid 渲染后导出（源文件 <code>assets/src/pipeline.mmd</code>，可重新渲染），静态图片在任何网络环境下都能正常显示。</sub></p>
 
 清洗后保留 **3,189,049** 条有效骑行，唯一用户 **1,206,439**，累计里程 **3,908,281 km**。
 
